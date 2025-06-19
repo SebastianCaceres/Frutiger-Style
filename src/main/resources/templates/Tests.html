@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" th:href="@{/main.css}">
 
 </head>
 <body class="image-bk">
@@ -69,5 +69,6 @@
             <p class="text-95">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ratione tenetur fugiat, ducimus adipisci, impedit et aperiam perspiciatis minima aut ea dolorum asperiores esse ipsam. Laudantium voluptatem laboriosam voluptates reiciendis.</p>
         </div>
     </div>
+    <a th:href="@{/}">Back</a>
 </body>
 </html>
