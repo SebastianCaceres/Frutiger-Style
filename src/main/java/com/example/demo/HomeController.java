@@ -6,13 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-
-    // Portfolio Pages
-    @GetMapping("/")
-    public String portfolioHome(Model model) {
-        return "index"; // This will be our XP-themed portfolio home
-    }
-
     // Existing Style Showcase Pages
     @GetMapping("95-style")
     public String style95() { // Model might not be needed if static
