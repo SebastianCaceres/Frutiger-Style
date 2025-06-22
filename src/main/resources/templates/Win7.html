@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Showcase - Windows 7 Theme</title>
+</head>
+<body th:style="'background:url(' + @{/images/miscellaneous_5.jpg} + ');'">
+<div class="container">
+    <div class="title-7 mb-4">
+        <h1>My Projects</h1>
+    </div>
+
+    <div class="row g-4">
+        <div class="col-md-6 col-lg-4" th:each="project: ${projects}">
+            <div class="content-7 card h-100">
+                <div class="title-7 card-header">
+                    <h1 th:text="${project.title}">Title</h1>
+                </div>
+                <div class="card-body">
+                    <p class="subtitle-7" th:text="${project.description}">Project Description</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script th:src="@{/main.js}"></script>
+</html>
