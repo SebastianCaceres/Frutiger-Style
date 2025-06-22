@@ -15,12 +15,10 @@
                 <div class="card-header">
                     <h1 th:text="${project.title}">Title</h1>
                 </div>
+                <img th:src="@{/images/EjOHWqqVgAAg_VB.jpg}" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <div class="card-title">
-                        <p th:text="${project.description}">Project Description</p>
-                    </div>
-                    <hr class="spacing">
-                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia recusandae aliquam et error officia aliquid, ea est culpa nesciunt asperiores fugiat facilis, omnis voluptatibus quibusdam, optio id expedita. Sapiente?</p>
+                    <div class="card-title pb-3" th:text="${project.description}"></div>
+                    <a class="button text">Go</a>
                 </div>
             </div>
         </div>
