@@ -6,20 +6,12 @@
   @extend .card;
   @extend .content-inside;
 
-  background-color: white;
-  color: #212529;
-  border: 1px solid #0077e8;
-  border-radius: 6px;
-
   .card-header {
     @extend .title-vista-blue;
-    border-bottom: none;
-    border-radius: 6px 6px 0 0;
   }
 
   .card-title {
     @extend .subtitle-vista-blue;
-    margin: 0;
   }
 
   .card-text {
@@ -28,9 +20,5 @@
 
   hr.spacing {
     @extend .spacing;
-  }
-
-  .card-body {
-    padding: 1.5rem;
   }
 }
